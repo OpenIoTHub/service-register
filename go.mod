@@ -1,4 +1,4 @@
-module github.com/mDNSService/utils
+module github.com/OpenIoTHub/service-register
 
 go 1.12
 
