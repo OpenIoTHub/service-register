@@ -667,6 +667,14 @@ func addrsForInterface(iface *net.Interface) ([]net.IP, []net.IP) {
 	if len(v6) == 0 {
 		v6 = v6local
 	}
+	//如果ipv4有多个并且包含"192.168"这样的ip就只留这样的ip。ipv4公网怎么办？
+	if len(v4) > 1 {
+		for _, ip := range v4 {
+			if v4 := ip.To4(); v4 != nil && v4[0] == 192 && v4[1] == 168 {
+				return []net.IP{ip}, v6
+			}
+		}
+	}
 	return v4, v6
 }
 

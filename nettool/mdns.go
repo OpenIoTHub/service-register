@@ -18,6 +18,8 @@ var MDNSServiceBaseInfo = map[string]string{
 	"home-page":            "https://github.com/OpenIoTHub",
 	"firmware-respository": "https://github.com/iotdevice",
 	"firmware-version":     "1.0",
+	//	mac
+	//	id
 }
 
 func CheckComponentExist(model string) (bool, error) {
@@ -64,7 +66,7 @@ func CheckmDNSServiceInfo(info map[string]string) error {
 	}
 	for _, name := range keyRequire {
 		if _, ok := info[name]; !ok {
-			return fmt.Errorf("mDNSServiceInfo:% not exist error!", name) //存在
+			return fmt.Errorf("mDNSServiceInfo:%s not exist error!", name) //存在
 		}
 	}
 	return nil
