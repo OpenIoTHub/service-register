@@ -99,6 +99,7 @@ type ServiceEntry struct {
 	TTL      uint32   `json:"ttl"`      // TTL of the service record
 	AddrIPv4 []net.IP //`json:"-"`        // Host machine IPv4 address
 	AddrIPv6 []net.IP //`json:"-"`        // Host machine IPv6 address
+	IsProxy  bool
 }
 
 // NewServiceEntry constructs a ServiceEntry.

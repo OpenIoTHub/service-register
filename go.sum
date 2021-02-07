@@ -2,6 +2,8 @@ github.com/cenkalti/backoff/v4 v4.1.0 h1:c8LkOFQTzuO0WBM/ae5HdGQuZPfPxp7lqBRwQRm
 github.com/cenkalti/backoff/v4 v4.1.0/go.mod h1:scbssz8iZGpm3xbr14ovlUdkxfGXNInqkPWOWmG2CLw=
 github.com/iotdevice/zeroconf v0.1.5 h1:Frt2kBg9mZVTr7Fk65+K9ukFqg0vwdgSlqst4szOSV0=
 github.com/iotdevice/zeroconf v0.1.5/go.mod h1:veXlaE9Mpm7I86ZEcfOsRpbsLEegVrjEnL5w1AUF5lo=
+github.com/iotdevice/zeroconf v0.1.6 h1:bX537VYDslKx2M5jM7p3jz1la3Ab5+n4+7GXmmoA/7c=
+github.com/iotdevice/zeroconf v0.1.6/go.mod h1:veXlaE9Mpm7I86ZEcfOsRpbsLEegVrjEnL5w1AUF5lo=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=

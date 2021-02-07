@@ -29,6 +29,7 @@ func Register(instance, service, domain string, port int, text []string, ifaces 
 	entry := NewServiceEntry(instance, service, domain)
 	entry.Port = port
 	entry.Text = text
+	entry.IsProxy = false
 
 	if entry.Instance == "" {
 		return nil, fmt.Errorf("Missing service instance name")
@@ -88,6 +89,7 @@ func RegisterProxy(instance, service, domain string, port int, host string, ips 
 	entry.Port = port
 	entry.Text = text
 	entry.HostName = host
+	entry.IsProxy = true
 
 	if entry.Instance == "" {
 		return nil, fmt.Errorf("Missing service instance name")
@@ -239,6 +241,9 @@ func (s *Server) shutdown() error {
 
 // recv is a long running routine to receive packets from an interface
 func (s *Server) recv4(c *ipv4.PacketConn) {
+	if !s.service.IsProxy {
+		s.service.AddrIPv4 = []net.IP{c.LocalAddr().(*net.UDPAddr).IP}
+	}
 	if c == nil {
 		return
 	}
@@ -267,6 +272,9 @@ func (s *Server) recv4(c *ipv4.PacketConn) {
 
 // recv is a long running routine to receive packets from an interface
 func (s *Server) recv6(c *ipv6.PacketConn) {
+	if !s.service.IsProxy {
+		s.service.AddrIPv6 = []net.IP{c.LocalAddr().(*net.UDPAddr).IP}
+	}
 	if c == nil {
 		return
 	}

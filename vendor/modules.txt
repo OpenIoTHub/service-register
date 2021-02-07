@@ -1,6 +1,6 @@
 # github.com/cenkalti/backoff/v4 v4.1.0
 github.com/cenkalti/backoff/v4
-# github.com/iotdevice/zeroconf v0.1.5
+# github.com/iotdevice/zeroconf v0.1.6
 ## explicit
 github.com/iotdevice/zeroconf
 # github.com/kr/pretty v0.1.0
