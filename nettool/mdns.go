@@ -23,6 +23,7 @@ var mdnsSServiceBaseInfo = map[string]string{
 }
 
 func GetDefaultMDNSServiceBaseInfo() (info map[string]string) {
+	info = make(map[string]string)
 	for key, value := range mdnsSServiceBaseInfo {
 		info[key] = value
 	}
