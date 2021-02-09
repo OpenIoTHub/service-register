@@ -1,11 +1,11 @@
-# github.com/cenkalti/backoff/v4 v4.1.0
-github.com/cenkalti/backoff/v4
-# github.com/iotdevice/zeroconf v0.1.5
+# github.com/cenkalti/backoff v2.2.1+incompatible
+github.com/cenkalti/backoff
+# github.com/grandcat/zeroconf v1.0.0
 ## explicit
-github.com/iotdevice/zeroconf
+github.com/grandcat/zeroconf
 # github.com/kr/pretty v0.1.0
 ## explicit
-# github.com/miekg/dns v1.1.35
+# github.com/miekg/dns v1.1.27
 github.com/miekg/dns
 # github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b
 ## explicit
@@ -13,14 +13,13 @@ github.com/satori/go.uuid
 # golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550
 golang.org/x/crypto/ed25519
 golang.org/x/crypto/ed25519/internal/edwards25519
-# golang.org/x/net v0.0.0-20210119194325-5f4716e94777
+# golang.org/x/net v0.0.0-20200114155413-6afb5195e5aa
 golang.org/x/net/bpf
 golang.org/x/net/internal/iana
 golang.org/x/net/internal/socket
 golang.org/x/net/ipv4
 golang.org/x/net/ipv6
-# golang.org/x/sys v0.0.0-20201119102817-f84b799fce68
-golang.org/x/sys/internal/unsafeheader
+# golang.org/x/sys v0.0.0-20190924154521-2837fb4f24fe
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 # gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15
